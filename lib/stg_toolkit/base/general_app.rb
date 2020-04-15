@@ -24,6 +24,8 @@ module StgToolkit
         @repository.update_config_xml(name: name, description: description, widget_id: widget_id)
         @repository.change_icon(icon)
         @repository.change_global_json(api_link: api_link)
+        @repository.generate_debug_apk
+        @repository.copy_debug_build_to('.', name)
       end
 
       private
