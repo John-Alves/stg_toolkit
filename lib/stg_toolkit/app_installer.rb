@@ -26,7 +26,7 @@ module StgToolkit
 
     def get_app_detail
       @app.name = @prompt.ask("Informe o nome do app: \n", default: 'Stg App')
-      @app.description = @prompt.ask("Breve descrição do app: \n", default: 'O aplicativo da sua clincia!')
+      @app.description = @prompt.ask("Breve descrição do app: \n", default: 'O aplicativo da sua clinica!')
       @app.api_link = @prompt.ask("Link do Endreço Externo: \n", default: 'https://stgfidelidade.ddns.net/clinicasAPP')
       @app.icon = request_icon
       @app.set_widget_id!
