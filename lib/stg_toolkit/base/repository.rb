@@ -15,11 +15,11 @@ module StgToolkit
         @url = url
 
         puts 'Baixando repositorio do GitHub...'
-        # system "rm -rf #{FULL_CODE_PATH}"
-        #
-        # g = Git.clone(@url, NAME, path: TEMP_BASE_PATH)
-        # g.config('user.name', 'John-Alves')
-        # g.config('user.email', 'johnnydealves99@gmail.com')
+        system "rm -rf #{FULL_CODE_PATH}"
+
+        g = Git.clone(@url, NAME, path: TEMP_BASE_PATH)
+        g.config('user.name', 'John-Alves')
+        g.config('user.email', 'johnnydealves99@gmail.com')
 
         puts 'Download concluído!'
       end
