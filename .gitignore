@@ -8,6 +8,4 @@
 /tmp/
 
 .idea/
-/debug/*
-/reinstall.sh
 *.gem
